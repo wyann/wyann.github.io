@@ -103,7 +103,7 @@
 <meta property="og:site_name" content="Wyann&#39;Notes">
 <meta property="og:description" content="这篇文章主要记录通过hexo搭建个人博客网站的一个过程，以便后续博客网站迁移维护。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-27T06:27:26.599Z">
+<meta property="og:updated_time" content="2017-08-27T06:29:37.847Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="博客搭建记录">
 <meta name="twitter:description" content="这篇文章主要记录通过hexo搭建个人博客网站的一个过程，以便后续博客网站迁移维护。">
@@ -414,21 +414,21 @@
 npm install
 </code></pre><p>启动服务端进行预览  </p>
 <pre><code>hexo s
-</code></pre><h2 id="在GitHub中部署"><a href="#在GitHub中部署" class="headerlink" title="在GitHub中部署"></a>在GitHub中部署</h2><h3 id="1-git配置"><a href="#1-git配置" class="headerlink" title="1.git配置"></a>1.git配置</h3><p>git初始化配置  </p>
+</code></pre><h2 id="在GitHub中部署"><a href="#在GitHub中部署" class="headerlink" title="在GitHub中部署"></a>在GitHub中部署</h2><h3 id="git配置"><a href="#git配置" class="headerlink" title="git配置"></a>git配置</h3><p>git初始化配置  </p>
 <pre><code>git config --global user.name &apos;your name&apos;  
 git config --global user.email &apos;your email&apos;  
 </code></pre><p>生成公钥私钥  </p>
 <pre><code>ssh-keygen -C &apos;your email&apos; -t rsa  
 </code></pre><p>将公钥配置到github中  </p>
-<h3 id="2-github博客库配置"><a href="#2-github博客库配置" class="headerlink" title="2.github博客库配置"></a>2.github博客库配置</h3><p>在github中new respository,库名称必须为’login user name’.github.io<br>点击设置，GitHub Pages选择一个主题生成github博客网站</p>
-<h3 id="3-hexo-github关联配置"><a href="#3-hexo-github关联配置" class="headerlink" title="3.hexo-github关联配置"></a>3.hexo-github关联配置</h3><p>在博客根目录下_config.yml文件中增加如下配置：  </p>
+<h3 id="github博客库配置"><a href="#github博客库配置" class="headerlink" title="github博客库配置"></a>github博客库配置</h3><p>在github中new respository,库名称必须为’login user name’.github.io<br>点击设置，GitHub Pages选择一个主题生成github博客网站</p>
+<h3 id="hexo-github关联配置"><a href="#hexo-github关联配置" class="headerlink" title="hexo-github关联配置"></a>hexo-github关联配置</h3><p>在博客根目录下_config.yml文件中增加如下配置：  </p>
 <pre><code>deploy:
   type: git
   repo: git@github.com:wyann/wyann.github.io.git
   branch: master  
 </code></pre><p>安装部署插件  </p>
 <pre><code>npm install hexo-deployer-git --save  
-</code></pre><h3 id="4-部署到github"><a href="#4-部署到github" class="headerlink" title="4.部署到github"></a>4.部署到github</h3><pre><code>hexo g
+</code></pre><h3 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h3><pre><code>hexo g
 hexo d  
 </code></pre><h2 id="博客美化"><a href="#博客美化" class="headerlink" title="博客美化"></a>博客美化</h2>
       
@@ -606,7 +606,7 @@ hexo d
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前置条件"><span class="nav-number">1.</span> <span class="nav-text">前置条件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#博客初始化"><span class="nav-number">2.</span> <span class="nav-text">博客初始化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在GitHub中部署"><span class="nav-number">3.</span> <span class="nav-text">在GitHub中部署</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-git配置"><span class="nav-number">3.1.</span> <span class="nav-text">1.git配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-github博客库配置"><span class="nav-number">3.2.</span> <span class="nav-text">2.github博客库配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-hexo-github关联配置"><span class="nav-number">3.3.</span> <span class="nav-text">3.hexo-github关联配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-部署到github"><span class="nav-number">3.4.</span> <span class="nav-text">4.部署到github</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#博客美化"><span class="nav-number">4.</span> <span class="nav-text">博客美化</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前置条件"><span class="nav-number">1.</span> <span class="nav-text">前置条件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#博客初始化"><span class="nav-number">2.</span> <span class="nav-text">博客初始化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在GitHub中部署"><span class="nav-number">3.</span> <span class="nav-text">在GitHub中部署</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#git配置"><span class="nav-number">3.1.</span> <span class="nav-text">git配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#github博客库配置"><span class="nav-number">3.2.</span> <span class="nav-text">github博客库配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo-github关联配置"><span class="nav-number">3.3.</span> <span class="nav-text">hexo-github关联配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署到github"><span class="nav-number">3.4.</span> <span class="nav-text">部署到github</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#博客美化"><span class="nav-number">4.</span> <span class="nav-text">博客美化</span></a></li></ol></div>
             
 
           </div>
