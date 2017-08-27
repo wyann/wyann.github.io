@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[博客搭建记录]]></title>
     <url>%2F2017%2F08%2F27%2F%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95%2F</url>
-    <content type="text"><![CDATA[hexo博客搭建记录利用hexo搭建个人博客网站 这个测试]]></content>
+    <content type="text"><![CDATA[这篇文章主要记录通过hexo搭建个人博客网站的一个过程，以便后续博客网站迁移维护。 前置条件安装Node.js、Git 博客初始化安装hexo npm install hexo-cli -g 新建博客目录 mkdir blog 初始化博客目录 hexo init blog npm install 启动服务端进行预览 hexo s 在GitHub中部署1.git配置git初始化配置 git config --global user.name &apos;your name&apos; git config --global user.email &apos;your email&apos; 生成公钥私钥 ssh-keygen -C &apos;your email&apos; -t rsa 将公钥配置到github中 2.github博客库配置在github中new respository,库名称必须为’login user name’.github.io点击设置，GitHub Pages选择一个主题生成github博客网站 3.hexo-github关联配置在博客根目录下_config.yml文件中增加如下配置： deploy: type: git repo: git@github.com:wyann/wyann.github.io.git branch: master 安装部署插件 npm install hexo-deployer-git --save 4.部署到githubhexo g hexo d 博客美化]]></content>
       <categories>
         <category>博客搭建</category>
       </categories>
